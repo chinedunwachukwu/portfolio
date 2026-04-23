@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Chinedu Nwachukwu | Executive Partner and Financial Operations VA</title>
+  <!-- Google Fonts + Font Awesome 6 -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fefefe;
+      color: #1a2c3e;
+      scroll-behavior: smooth;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* header */
+    header {
+      background: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.03);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(0px);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 24px;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 1.55rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.3px;
+    }
+
+      .logo-image {
+        width: 40px;             
+        height: 40px;
+        border-radius: 50%;       
+        overflow: hidden;          
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+     .with-space::after {
+       content: "";
+       display: block;
+       height: 1.5em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2c3e50;
+      transition: color 0.2s;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: #2a73ff;
+    }
+
+    /* buttons */
+    .btn-primary {
+      background: #2a73ff;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+      transition: all 0.2s;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .btn-primary:hover {
+      background: #0f2b4f;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #1e3c72;
+      color: #1e3c72;
+      padding: 10px 24px;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+
+    .btn-outline:hover {
+      background: #1e3c72;
+      color: white;
+    }
+
+    .btn-small {
+      background: transparent;
+      border: 1px solid #cbd5e1;
+      color: #1e3c72;
+      padding: 6px 16px;
+      border-radius: 30px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 16px;
+      display: inline-block;
+    }
+
+    .btn-small:hover {
+      background: #1e3c72;
+      color: white;
+      border-color: #1e3c72;
+    }
+
+    /* sections */
+    section {
+      padding: 80px 0;
+      border-bottom: 1px solid #eef2f8;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 48px;
+      text-align: center;
+      letter-spacing: -0.3px;
+      color: #0a2540;
+    }
+
+    .section-sub {
+      text-align: center;
+      color: #4a627a;
+      max-width: 700px;
+      margin: -32px auto 48px;
+    }
+
+    /* hero */
+    .hero {
+      padding: 60px 0 48px;
+      text-align: center;
+      background: linear-gradient(145deg, #ffffff 0%, #f8fafd 100%);
+    }
+
+    .hero-content {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      background: #e9f0ff;
+      color: #1e3c72;
+      display: inline-block;
+      padding: 6px 16px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      background: #1e3c72;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-tagline {
+      font-size: 1.3rem;
+      color: #2c6280;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .hero-desc {
+      font-size: 1rem;
+      color: #2c3e50;
+      max-width: 680px;
+      margin: 0 auto 32px;
+    }
+
+    .trust-badge {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #2a5298;
+    }
+
+    /* pillars grid */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+
+    .pillar-card {
+      background: white;
+      border-radius: 28px;
+      padding: 32px 24px;
+      box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.05);
+      transition: all 0.25s;
+      border: 1px solid #eef2f8;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 36px -12px rgba(0, 0, 0, 0.1);
+    }
+
+    .pillar-icon {
+      font-size: 2.6rem;
+      margin-bottom: 20px;
+      color: #1e3c72;
+    }
+
+    .pillar-card h3 {
+      font-size: 1.55rem;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .pillar-card ul {
+      list-style: none;
+      margin: 16px 0;
+    }
+
+    .pillar-card li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+
+    .pillar-card li i {
+      color: #2a73ff;
+      font-size: 0.8rem;
+      width: 18px;
+    }
+
+    .tech-badge {
+      background: #f0f4fa;
+      padding: 6px 12px;
+      border-radius: 40px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-top: 16px;
+      color: #1e3c72;
+    }
+
+    .pillar-4 {
+      border-top: 4px solid #2a73ff;
+      background: linear-gradient(145deg, #ffffff, #d1e0ff);
+    }
+
+    /* case studies grid */
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+
+    .case-card {
+      background: linear-gradient(145deg, #ffffff, #d1e0ff);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.02);
+      border: 1px solid #eef2f8;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .case-icon {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+
+    .case-card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .case-meta {
+      font-weight: 500;
+      color: #2a73ff;
+      margin: 12px 0 6px;
+    }
+
+/* Modal background overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+/* Modal content box - wider for multiple images */
+.modal-content {
+  background-color: #fff;
+  margin: 3% auto;
+  padding: 24px;
+  border-radius: 32px;
+  max-width: 95%;
+  width: 1100px;  /* wider default for desktop */
+  text-align: center;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* For extra large screens */
+@media (min-width: 1200px) {
+  .modal-content {
+    max-width: 1000px;
+    width: 85%;
+  }
+}
+
+/* For tablets and smaller */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    margin: 10% auto;
+    padding: 16px;
+  }
+}
+
+/* Images inside modal */
+.modal-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid #eef2f8;
+}
+
+/* Container for multiple images (before/after) */
+.multi-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.multi-image-container img {
+  max-width: calc(50% - 12px);
+  flex: 1;
+  min-width: 250px;
+}
+
+/* For mobile: stack images vertically */
+@media (max-width: 768px) {
+  .multi-image-container {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .multi-image-container img {
+    max-width: 100%;
+  }
+}
+
+/* PDF iframe */
+.modal-content iframe {
+  width: 100%;
+  height: 600px;
+  border-radius: 16px;
+  border: 1px solid #eef2f8;
+}
+
+/* Close button */
+.close-modal {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #aaa;
+  transition: color 0.2s;
+}
+
+.close-modal:hover {
+  color: #1e3c72;
+}
+
+    /* tech split */
+    .tech-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      background: #ffffff;
+      border-radius: 32px;
+      padding: 32px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+      border: 1px solid #eef2f8;
+    }
+
+    .code-block {
+      background: #1e2a3a;
+      color: #e2e8f0;
+      padding: 18px;
+      border-radius: 16px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      overflow-x: auto;
+      margin-top: 16px;
+    }
+
+    .process-steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 32px;
+    }
+
+    .step {
+      flex: 1;
+      background: #f9fafc;
+      border-radius: 24px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(209, 224, 255, 0.6), 0 2px 4px rgba(209, 224, 255, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .step:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 28px -8px rgba(209, 224, 255, 0.8);
+    }
+
+    /* contact */
+    .contact-card {
+      background: white;
+      border-radius: 32px;
+      padding: 48px 32px;
+      text-align: center;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.05);
+      border: 1px solid #eef2f8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 32px;
+      font-size: 0.8rem;
+      color: #5e7b9c;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .tech-split {
+        grid-template-columns: 1fr;
+      }
+      .section-title {
+        font-size: 1.8rem;
+      }
+      .process-steps {
+        flex-direction: column;
+      }
+      .trust-badge {
+        gap: 16px;
+        font-size: 0.7rem;
+      }
+       #modalBody div[style*="flex"] {
+        flex-direction: column;
+        align-items: center;
+     }
+      #modalBody img {
+       max-width: 90% !important;
+       margin-bottom: 16px;
+    }
+     }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="navbar container">
+    <div style="display: flex; align-items: center; gap: 12px;">
+    <div class="logo-image">
+    <img src="Portfolio_photo.jpeg" alt="logo" style="max-width: 100%; height: auto; object-fit: cover;">
+    </div>
+    <div class="logo">Chinedu Nwachukwu</div>
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#tech">Data Intelligence</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-badge"><i class="fas fa-chart-line"></i> Executive Partner and Financial Operations VA</div>
+      <h1>Driving Financial Clarity, Executive Precision and Data Intelligence</h1>
+      <div class="hero-tagline">Where financial clarity meets operational flow and data‑driven foresight.</div>
+      <p class="hero-desc">I partner with executives to eliminate friction - from balancing the books to mastering the calendar, and from analyzing support trends to automating workflows, ensuring your business is always audit‑ready and growth‑prepared.</p>
+      <div class="hero-buttons" style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="#contact" class="btn-primary"><i class="fas fa-calendar-check"></i> Schedule Discovery Call</a>
+        <a href="#services" class="btn-outline">View 4 Pillars</a>
+      </div>
+      <div class="trust-badge">
+        <span><i class="fas fa-chart-simple"></i> 9.4 NPS</span>
+        <span><i class="fas fa-building"></i> 150+ accounts</span>
+        <span><i class="fas fa-clock"></i> <48h SLA</span>
+        <span><i class="fas fa-database"></i> SQL + Python ready</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Four Pillars intro -->
+  <section id="about">
+    <div class="container">
+      <div style="display: flex; flex-wrap: wrap; gap: 48px; align-items: center; margin-bottom: 64px;">
+        <div style="flex: 1.5;">
+          <h2 style="font-size: 1.9rem; margin-bottom: 20px;">Your Vision, My Infrastructure</h2>
+          <p style="margin-bottom: 20px;">High‑level leadership requires a clear mind, a clean back‑office, and intelligent systems. I specialize in providing all three. With a background in Financial Operations, Executive Support, and growing expertise in SQL/Python, I act as the strategic right hand for executives ready to scale without friction.</p>
+          <p>I don’t just manage tasks - I build systems that protect your time, bottom line, and customer relationships. Absolute discretion, proactive problem‑solving, and continuous learning define my partnership.</p>
+        </div>
+        <div style="flex: 1; background: #eef2fa; border-radius: 32px; padding: 40px; text-align: center;">
+          <div style="background:#eef2fa; border-radius: 50%; width: 180px; height: 180px; display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+            <div style="border-radius: 50%; width: 180px; height: 180px; overflow: hidden; margin: 0 auto;">
+             <img src="Portfolio_photo.jpeg" alt="Chinedu Nwachukwu" style="max-width: 100%; height: auto; object-fit: cover;">
+	</div>
+          </div>
+          <p style="margin-top: 16px;">Your focus, my infrastructure.</p>
+        </div>
+      </div>
+      <div class="pillars-grid" style="margin-bottom: 0;">
+        <div class="pillar-card pillar-4"><div class="pillar-icon"><i class="fas fa-coins"></i></div><h3>Financial Integrity</h3><p>Measurable growth through meticulous books, cash flow visibility, and audit‑ready records.</p></div>
+        <div class="pillar-card pillar-4"><div class="pillar-icon"><i class="fas fa-shield-alt"></i></div><h3>Strategic Gatekeeping</h3><p>Calendar auditing, inbox diplomacy, and decision support to protect your deep work.</p></div>
+        <div class="pillar-card pillar-4"><div class="pillar-icon"><i class="fas fa-clipboard-list"></i></div><h3>Operational Excellence</h3><p>SOPs, CRM hygiene, and premium client relations that reflect your brand.</p></div>
+        <div class="pillar-card pillar-4"><div class="pillar-icon"><i class="fas fa-database"></i> <i class="fas fa-code"></i></div><h3>Data and Automation</h3><p>SQL trend analysis, Python automation, and proactive support intelligence.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (Detailed pillars) -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">The Four Pillars of Partnership</h2>
+      <div class="pillars-grid">
+        <div class="pillar-card pillar-4">
+          <div class="pillar-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3>Financial Operations and Analysis</h3>
+          <ul><li><i class="fas fa-check-circle"></i> Full‑cycle bookkeeping and reconciliation</li><li><i class="fas fa-check-circle"></i> Cash flow management (AP/AR)</li><li><i class="fas fa-check-circle"></i> Monthly P&L, balance sheets</li><li><i class="fas fa-check-circle"></i> Expense audits and tax prep</li></ul>
+          <div class="tech-badge">QuickBooks · Xero · Wave · Bill.com · Gusto · Expensify</div>
+        </div>
+        <div class="pillar-card pillar-4">
+          <div class="pillar-icon"><i class="fas fa-calendar-alt"></i></div>
+          <h3>Executive Strategy and Gatekeeping</h3>
+          <ul><li><i class="fas fa-check-circle"></i> Strategic calendar auditing and deep work protection</li><li><i class="fas fa-check-circle"></i> Inbox diplomacy (Inbox Zero)</li><li><i class="fas fa-check-circle"></i> Stakeholder liaison and decision support</li><li><i class="fas fa-check-circle"></i> Travel and itinerary optimization</li></ul>
+          <div class="tech-badge">Google Calendar · Calendly · Slack · 1Password · Triplt</div>
+        </div>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar-card pillar-4">
+          <div class="pillar-icon"><i class="fas fa-headset"></i></div>
+          <h3>Administrative Excellence and Client Experience</h3>
+          <ul><li><i class="fas fa-check-circle"></i> SOP library creation</li><li><i class="fas fa-check-circle"></i> CRM and database management</li><li><i class="fas fa-check-circle"></i> Premium client relations and onboarding</li><li><i class="fas fa-check-circle"></i> Project coordination</li></ul>
+          <div class="tech-badge">HubSpot · Zoho · Zendesk · Asana · Trello · MS365</div>
+        </div>
+        <div class="pillar-card pillar-4">
+          <div class="pillar-icon"><i class="fas fa-robot"></i></div>
+          <h3>Data and Automation Intelligence</h3>
+          <ul><li><i class="fas fa-check-circle"></i> SQL querying for support trends and root causes</li><li><i class="fas fa-check-circle"></i> Python scripting (pandas) for ticket auto‑categorization</li><li><i class="fas fa-check-circle"></i> Custom SLA dashboards and predictive insights</li><li><i class="fas fa-check-circle"></i> Automated reporting (reduces manual work)</li></ul>
+          <div class="tech-badge">SQL (JOIN, GROUP BY, Subqueries) · Python (pandas) · Excel · Jupyter</div>
+          <div class="tech-badge" style="background:#e9f0ff;">✨ 20% ticket reduction via SQL root cause analysis</div>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top: 20px;"><i class="fas fa-sync-alt"></i> Tool‑agnostic - I adapt to your stack or recommend improvements.</p>
+    </div>
+  </section>
+
+  <!-- Case Studies with Buttons -->
+  <section id="case-studies">
+    <div class="container">
+      <h2 class="section-title">Real Results - Case Studies</h2>
+      <div class="case-grid">
+        <div class="case-card">
+          <div class="case-icon"><i class="fas fa-envelope-open-text"></i></div>
+          <h4>Inbox Zero Mastery</h4>
+          <p><strong>The Client:</strong> A high-output Founder managing multiple ventures with a daily email volume of 150+ incoming messages.</p>
+	  <p class="with-space"><p/>
+          <p><strong>Challenge:</strong> The client receives 150+ emails/day, has 2500+ unread emails and daily spends 3hrs+ sorting before actual workday even begins.</p>
+          <p class="case-meta">Strategy:</p>
+          <p>I implemented Gatekeeper protocol to reclaim focus, filters, VIP list, drafting 70% of responses.</p>
+          <p class="case-meta">Result:</p>
+          <p>Reduced email time from 180min to 20min daily, achieved 100% VIP response within 4h.</p>
+	  <button class="btn-small" onclick="openModal(['Case_Study_email-Before.jpg', 'Case_Study_email-After.jpg'],'Inbox Zero: Cluttered inbox leaving important messages unattended got cleaned up and VIP responses guaranteed within 4 hours.','multiple')"><i class="fas fa-images"></i><strong> View Before/After Inbox </strong></button>
+        </div>
+        <div class="case-card">
+          <div class="case-icon"><i class="fas fa-calendar-week"></i></div>
+          <h4>Strategic Calendar Audit</h4>
+          <p><strong>The Client:</strong> A Visionary Executive and Creative Director juggling back-to-back meetings, internal team management, and high-level business development.</p>
+	  <p class="with-space"><p/>
+          <p><strong>Challenge:</strong> Client suffered from constant context switching leading to meeting fatigue (6-8hrs/day), logistical errors with international partners, and decision burnout from prioritizing routine tasks over strategy.</p>
+          <p class="case-meta">Action:</p>
+          <p>I aligned peak energy with deep work, batched routine tasks, deflected 40% of inquiries, and introduced buffers plus time zone sync to erase scheduling friction.</p>
+          <p class="case-meta">Result:</p>
+          <p>Reclaimed 12h/week, 25% fewer meetings, 0 conflicts.</p>
+	  <button class="btn-small" onclick="openModal('Case_Study_Calendar.jpg','Strategic calendar audit: reclaimed 12 hours of deep work per week, eliminated double-bookings.','image')"><i class="fas fa-image"></i><strong> View Calendar </strong></button>
+        </div>
+      </div>
+      <div class="case-grid">
+        <div class="case-card">
+          <div class="case-icon"><i class="fas fa-plane"></i></div>
+          <h4>Global Travel Optimization</h4>
+          <p><strong>The Client:</strong> A high-net-worth Founder and Keynote Speaker with a rigorous international travel schedule involving multiple time zones and stakeholder engagements.</p>
+	  <p class="with-space"><p/>
+          <p><strong>Challenge:</strong> The client has fragmented travel planning causing missed connections, productivity loss from ignored jet lag/prep time, and financial leakage from last minute bookings and unused loyalty points.</p>
+          <p class="case-meta">Action:</p>
+          <p>I created a minute-by-minute itinerary, optimized flights for sleep and hotels for proximity, integrated expense tracking and loyalty points, and provided realtime contingency rebooking.</p>
+          <p class="case-meta">Result:</p>
+          <p>Saved 15% in travel cost, 30% productivity gain, utilized over 200k in dormant loyalty miles.</p>
+	  <button class="btn-small" onclick="openModal('Travel_Itinerary.pdf','Global travel itinerary: saved 15% on travel costs, utilized 200k+ miles, minute-by-minute logistics.','pdf')"><i class="fas fa-file-pdf"></i><strong> View Itinerary </strong></button>
+        </div>
+        <div class="case-card">
+          <div class="case-icon"><i class="fas fa-chart-line"></i></div>
+          <h4>Financial Clarity + SQL Prevention</h4>
+          <p><strong>The Client:</strong> The CEO of a rapidly scaling boutique consultancy.</p>
+	  <p class="with-space"><p/>
+          <p><strong>Challenge:</strong> The CEO was overwhelmed by manual invoicing, late payment chasing, spending 15+ hours weekly on administrative tasks. With bookkeeping three months behind, cash flow was unclear, forcing them to make critical hiring decisions based on gut feeling rather than real data, resulting in unnecessary financial stress.</p>
+          <p class="case-meta">Action:</p>
+          <p>I executed a 30‑day systems overhaul: migrated messy spreadsheets to QuickBooks Online, reconciled 90 days of backlogged data, automated invoicing and follow‑ups, performed SQL analysis of payment delays and built a Python aging script to flag overdue accounts.</p>
+          <p class="case-meta">Result:</p>
+          <p>Reduced the CEO’s administrative burden from 15 hours to 2 hours per week, cut aged receivables by 22% in 60 days via automated reminders and follow‑ups, and provided a weekly P&L and cash flow reports that eneabledn data-driven decision making.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Modal: now supports image, multiple images, and PDF -->
+<div id="caseModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal" onclick="closeModal()">&times;</span>
+    <div id="modalBody"></div>
+    <p id="modalMessage" style="margin-top: 16px;"></p>
+  </div>
+</div>
+
+  <!-- Tech Deep Dive: SQL & Python (Pillar 4) -->
+  <section id="tech">
+    <div class="container">
+      <h2 class="section-title">Data and Automation Intelligence</h2>
+      <div class="tech-split">
+        <div><i class="fas fa-database fa-2x" style="color:#1e3c72;"></i><h3 style="margin: 16px 0 8px;">SQL for Support Analytics</h3><p>Uncover ticket volume, SLA performance, and recurring issues. Provide Product teams with evidence.</p><div class="code-block">-- Top issue categories, last 6 months<br>SELECT category, COUNT(*) as tickets,<br>AVG(resolution_hours) as avg_resolution<br>FROM support_tickets<br>WHERE created_at >= DATE('now','-6 months')<br>GROUP BY category ORDER BY tickets DESC;</div><div class="tech-badge">JOINs · aggregation · subqueries</div></div>
+        <div><i class="fab fa-python fa-2x" style="color:#306998;"></i><h3 style="margin: 16px 0 8px;">Python Automation</h3><p>Auto‑tag tickets, generate weekly SLA reports, flag overdue cases.<i></i><p class="with-space"></p></p><div class="code-block">import pandas as pd<br>df = pd.read_csv('tickets.csv')<br>df['priority'] = df['subject'].apply(<br>  lambda x: 'High' if 'urgent' in x.lower() else 'Medium')<br>df.to_csv('tagged_tickets.csv', index=False)</div><div class="tech-badge">pandas · scripting · next: API automation</div></div>
+      </div>
+      <div style="margin-top: 32px; background:#eef3fc; padding: 28px; border-radius: 32px; text-align: center;">
+        <i class="fas fa-chart-line"></i> <strong>Outcome:</strong> I don’t just close tickets - I prevent them. SQL finds the root cause, Python automates the repetitive. More time for empathy & strategy.
+      </div>
+    </div>
+  </section>
+
+  <!-- Onboarding Process -->
+  <section id="process">
+    <div class="container">
+      <h2 class="section-title">The Path to Partnership</h2>
+      <div class="process-steps">
+        <div class="step"><i class="fas fa-search fa-2x" style="color:#1e3c72;"></i><h3>1. Strategic Discovery</h3><p>20‑min consultation to map bottlenecks, goals, and priorities.</p><small>→ Tailored proposal</small></div>
+        <div class="step"><i class="fas fa-clipboard-list fa-2x" style="color:#1e3c72;"></i><h3>2. Deep‑Dive Audit</h3><p>Finance, inbox/calendar, systems, and data readiness.</p></div>
+        <div class="step"><i class="fas fa-plug fa-2x" style="color:#1e3c72;"></i><h3>3. Seamless Integration</h3><p>Secure credential sharing, SOP documentation, SQL/Python reporting setup.</p></div>
+        <div class="step"><i class="fas fa-chart-line fa-2x" style="color:#1e3c72;"></i><h3>4. Active Partnership</h3><p>Friday Executive Summary: Financial health, operational wins, data insights.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security & Communication -->
+  <section id="security">
+    <div class="container">
+      <div style="background:#ffffff; border-radius: 32px; padding: 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.02); border:1px solid #eef2f8;">
+        <h3 style="font-size:1.8rem; margin-bottom: 24px; text-align:center;">Your Business is Protected</h3>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap:24px;">
+          <div><i class="fas fa-lock"></i> <strong>Secure credentials</strong><br>1Password/LastPass, zero‑knowledge</div>
+          <div><i class="fas fa-chart-line"></i> <strong>Financial data integrity</strong><br>Read‑only, bank‑grade encryption</div>
+          <div><i class="fas fa-database"></i> <strong>Data security (SQL/Python)</strong><br>Anonymized sandbox, no live credentials in code</div>
+          <div><i class="fas fa-file-signature"></i> <strong>Strict NDA</strong><br>Full confidentiality, GDPR/CCPA aligned</div>
+        </div>
+        <p style="margin-top: 32px; text-align:center; font-style:italic;">My goal is to provide total peace of mind - delegate with confidence.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & CTA -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-card">
+        <h2 style="margin-bottom: 16px;">Ready to Scale with Confidence?</h2>
+        <p style="margin-bottom: 32px;">Let’s eliminate operational friction and unlock your next growth phase.</p>
+        <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+          <a href="#" class="btn-primary"><i class="fas fa-calendar-alt"></i> Schedule 20‑min Discovery Call</a>
+     <!--     <a href="#" class="btn-outline"><i class="fas fa-download"></i> Download 4‑Pillar Service Guide</a>	-->
+        </div>
+        <div style="margin-top: 40px;">
+          <i class="fas fa-envelope"></i> chinedunwachukwu@rocketmail.com &nbsp;&nbsp;|&nbsp;
+          <i class="fab fa-linkedin"></i> linkedin.com/in/chinedunwa &nbsp;&nbsp;|&nbsp;
+          <i class="fas fa-map-marker-alt"></i> Abuja, Nigeria
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Chinedu Nwachukwu - Executive Partner and Financial Operations Virtual Assistant | Data‑Driven · Disciplined · Discreet</p>
+  <p style="margin-top: 8px;"><i class="fas fa-database"></i> SQL · Python automation · 9.4 NPS · 150+ enterprise accounts</p>
+</footer>
+
+<script>
+function openModal(content, message, type) {
+  const modal = document.getElementById('caseModal');
+  const modalBody = document.getElementById('modalBody');
+  const modalMsg = document.getElementById('modalMessage');
+  
+  modal.style.display = 'block';
+  modalMsg.textContent = message;
+  
+  // Clear previous content
+  modalBody.innerHTML = '';
+  
+  if (type === 'image') {
+    const img = document.createElement('img');
+    img.src = content;
+    img.alt = 'Case Study Visual';
+    img.style.maxWidth = '100%';
+    img.style.borderRadius = '12px';
+    modalBody.appendChild(img);
+  } 
+  else if (type === 'multiple') {
+    // ✅ UPDATED BLOCK – ADD THE CLASS NAME HERE
+    const container = document.createElement('div');
+    container.className = 'multi-image-container';  // <-- THIS IS THE ADDITION
+    content.forEach(imgSrc => {
+      const img = document.createElement('img');
+      img.src = imgSrc;
+      img.alt = 'Case Study Visual';
+      container.appendChild(img);
+    });
+    modalBody.appendChild(container);
+  }
+  else if (type === 'pdf') {
+    const iframe = document.createElement('iframe');
+    iframe.src = content;
+    iframe.style.width = '100%';
+    iframe.style.height = '500px';
+    iframe.style.border = 'none';
+    modalBody.appendChild(iframe);
+
+/*    // Optional download link    
+    const downloadLink = document.createElement('a');
+    downloadLink.href = content;
+    downloadLink.download = '';
+    downloadLink.textContent = '📄 Download PDF';
+    downloadLink.style.display = 'block';
+    downloadLink.style.marginTop = '16px';
+    downloadLink.style.color = '#1e3c72';
+    downloadLink.style.fontWeight = '600';
+    modalBody.appendChild(downloadLink);	*/
+  }
+}
+    
+function closeModal() {
+  document.getElementById('caseModal').style.display = 'none';
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById('caseModal');
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+</script>
+
+</body>
+</html>
